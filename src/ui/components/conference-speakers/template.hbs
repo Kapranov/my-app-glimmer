@@ -1,0 +1,16 @@
+<div>
+  <p>Speaking: {{currentlySpeaking}}</p>
+
+  <ul>
+      {{#each speakers key="@index" as |speaker|}}
+        <li>{{speaker}}</li>
+      {{/each}}
+  </ul>
+
+  {{#if moreSpeakers}}
+    <button onclick={{action next}}>Next</button>
+  {{else}}
+    <p>All finished!</p>
+  {{/if}}
+</div>
+
