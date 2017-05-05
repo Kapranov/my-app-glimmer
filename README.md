@@ -127,7 +127,7 @@ But two points:
    is a language that is every bit as flexible and dynamic as JavaScript
    because, well, it is JavaScript.
 
-### *JavaScript + Types = TypeScript*
+#### *JavaScript + Types = TypeScript*
 
 ### 5 May Oleg G.Kapranov
 
