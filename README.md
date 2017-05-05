@@ -193,6 +193,8 @@ over them:
 ![person](/person.png "Person class")
 
 
+#### *“But I Still Don’t Want to Use TypeScript!”*
+
 
 
 ### 5 May Oleg G.Kapranov
