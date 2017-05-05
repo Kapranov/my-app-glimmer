@@ -1,3 +1,39 @@
+# MyAppGlimmer
+
+A short introduction of this app could easily go here.
+
+## Prerequisites
+
+You will need the following things properly installed on your computer.
+
+* [Git](https://git-scm.com/)
+* [Node.js](https://nodejs.org/) (with NPM)
+* [Yarn](https://yarnpkg.com/en/)
+* [Ember CLI](https://ember-cli.com/)
+
+## Installation
+
+* `git clone <repository-url>` this repository
+* `cd my-app-glimmer`
+* `yarn`
+
+## Running / Development
+
+* `ember serve`
+* Visit your app at [http://localhost:4200](http://localhost:4200).
+
+### Building
+
+* `ember build` (development)
+* `ember build --environment production` (production)
+
+## Further Reading / Useful Links
+
+* [glimmerjs](http://github.com/tildeio/glimmer/)
+* [ember-cli](https://ember-cli.com/)
+
+-----------
+
 # Glimmer.js: What’s the Deal with TypeScript?
 
 by Tom Dale Member of the JavaScript glitterati. Apr 12
@@ -224,43 +260,6 @@ TypeScript’s love for JavaScript, it couldn’t be easier.
 
 -----------
 
-# MyAppGlimmer
-
-This README outlines the details of collaborating on this Glimmer application.
-A short introduction of this app could easily go here.
-
-## Prerequisites
-
-You will need the following things properly installed on your computer.
-
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with NPM)
-* [Yarn](https://yarnpkg.com/en/)
-* [Ember CLI](https://ember-cli.com/)
-
-## Installation
-
-* `git clone <repository-url>` this repository
-* `cd my-app-glimmer`
-* `yarn`
-
-## Running / Development
-
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-## Further Reading / Useful Links
-
-* [glimmerjs](http://github.com/tildeio/glimmer/)
-* [ember-cli](https://ember-cli.com/)
-
 ### 5 May Oleg G.Kapranov
 
 [1]: https://glimmerjs.com/
-
-
