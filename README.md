@@ -224,8 +224,39 @@ JavaScript* (i.e., ``emitDecoratorMetadata``). Dependency injection is
 front and center in Angular, so they (very rationally) decided to use
 the types you’d write anyway to power the DI system.
 
+I actually think this is a cool example of improving developer
+ergonomics in Angular by using existing type information, but it does
+have the unfortunate effect of requiring different, often awkward APIs
+for people who want to use JavaScript.
 
+Glimmer goes in the other direction. We like that TypeScript is just
+JavaScript, so the APIs you use in both languages are exactly the same.
+Because Glimmer is written in TypeScript, you get great autocompletion
+and type checking out of the box, but there’s no requirement to use
+TypeScript, and there’s no alternate set of APIs for JavaScript.
 
+After having used TypeScript for nearly a year, I have to confess: I
+never want to start a new project without it again.
+
+Refactors that used to take weeks take days, sometimes less. And because
+refactoring is so much easier, cleanup that would never have happened
+becomes… almost painless.
+
+In literally every case, converting a project from JavaScript to
+TypeScript has identified at least one bug. Because I’m now aware of the
+kinds of bugs TypeScript catches automatically, writing code without it
+feels like walking a tight rope without a net.
+
+Most of all, I continue to be impressed by the professionalism of the
+TypeScript team. In an ecosystem that can feel built on a house of
+unmaintained cards, TypeScript’s drumbeat of constant, iterative
+improvement is refreshing.
+
+At the end of the day, though, JavaScript is the language of the web.
+It’s our job to give you a library that feels great whatever you choose.
+
+That’s why we design our APIs for JavaScript first, and thanks to
+TypeScript’s love for JavaScript, it couldn’t be easier.
 
 ### 5 May Oleg G.Kapranov
 
