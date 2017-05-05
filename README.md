@@ -190,7 +190,7 @@ example, using a TypeScript-enabled editor like VS Code gives us
 detailed information about class properties, just by hovering our mouse
 over them:
 
-[logo]: https://github.com/Kapranov/my-app-glimmer/raw/master/person.png "Person class"
+![person](/person.png "Person class")
 
 
 
