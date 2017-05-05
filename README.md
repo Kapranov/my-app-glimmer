@@ -129,6 +129,38 @@ But two points:
 
 #### *JavaScript + Types = TypeScript*
 
+For people who haven’t used TypeScript, it’s easy to imagine that it
+might be a bunch of weird, complicated new stuff on top of JavaScript,
+in addition to types. In reality, TypeScript is just JavaScript plus the
+smallest possible set of syntax additions required to let you
+incrementally typecheck your code.
+
+What’s incredible about the TypeScript compiler is that it doesn’t
+transpile code so much as just strip out type annotations. Debugging is
+straightforward because each line of TypeScript corresponds to the same
+line of JavaScript, just without the types.
+
+Here’s an example TypeScript file, and the resulting compiled JavaScript
+(targeting ES2017):
+
+```javascript
+class Person {
+  /** The person's given name. */
+  name: string;
+
+  constructor(name: string) {
+    this.name = name;
+  }
+
+  async sayHello() {
+    console.log(`Hello, ${this.name}!`);
+  }
+}
+
+let person = new Person("Tom");
+person.sayHello().then(() => console.log("Done"));
+```
+
 ### 5 May Oleg G.Kapranov
 
 
