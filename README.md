@@ -144,6 +144,8 @@ Here’s an example TypeScript file, and the resulting compiled JavaScript
 (targeting ES2017):
 
 ```javascript
+// 1-say-hello.ts
+
 class Person {
   /** The person's given name. */
   name: string;
@@ -160,6 +162,38 @@ class Person {
 let person = new Person("Tom");
 person.sayHello().then(() => console.log("Done"));
 ```
+
+```javascript
+// 2-say-hello.js
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+
+  async sayHello() {
+    console.log(`Hello, ${this.name}!`);
+  }
+}
+
+let person = new Person("Tom");
+person.sayHello().then(() => console.log("Done"));
+```
+
+As you can see, we’re using cutting-edge ES2017 features like async
+functions, and the syntax is exactly the same across both. The only
+difference in the TypeScript version is that we declare the fields on
+the ``Person`` class, as well as the type of the arguments to the
+constructor; these simply disappear in the JavaScript output.
+
+And even these simple annotations quickly begin to pay dividends. For
+example, using a TypeScript-enabled editor like VS Code gives us
+detailed information about class properties, just by hovering our mouse
+over them:
+
+[logo]: https://github.com/Kapranov/my-app-glimmer/raw/master/person.png "Person class"
+
+
+
 
 ### 5 May Oleg G.Kapranov
 
