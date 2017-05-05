@@ -195,6 +195,36 @@ over them:
 
 #### *“But I Still Don’t Want to Use TypeScript!”*
 
+And that’s totally cool! Glimmer is a library, first and foremost, for
+writing *JavaScript* apps. If you don’t want to use TypeScript, you should
+have the freedom not to.
+
+
+#### *“That’s what Angular said and look how that turned out.”*
+
+OK, I guess this is maybe the elephant in the room. A lot of people’s
+first exposure to TypeScript was Angular 2. Looking at the Angular
+website, it’s easy to get the sense that using TypeScript means
+JavaScript becomes a de facto second-class citizen.
+
+For example, here’s an Angular component in TypeScript:
+
+![angular](/angular.png "Angular.js example")
+
+Here’s the same thing in ES6 JavaScript:
+
+![es6](/es6.png "ES6 JavaScript")
+
+As you can see, the JavaScript version is quite a bit longer than the
+TypeScript version. So why wouldn’t Glimmer suffer the same fate?
+
+The primary reason is that *Angular relies on an experimental
+TypeScript feature that emits type information in the compiled
+JavaScript* (i.e., ``emitDecoratorMetadata``). Dependency injection is
+front and center in Angular, so they (very rationally) decided to use
+the types you’d write anyway to power the DI system.
+
+
 
 
 ### 5 May Oleg G.Kapranov
